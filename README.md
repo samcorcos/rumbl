@@ -17,3 +17,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## PSQL
+
+In the event of database failure, try running these commands:
+
+`pg_ctl -D /usr/local/var/postgres stop -s -m fast`
+
+`pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start`
